@@ -1,0 +1,51 @@
+@import 'material-icons/iconfont/material-icons.css';
+
+body {
+  inline-size: 100vw;
+  block-size: 100vh;
+}
+
+.btn {
+  box-sizing: border-box;
+  inline-size: 130px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  cursor: pointer;
+  transition: .4s;
+
+  &:hover {
+    background-color: #333;
+    color: #fff;
+  }
+}
+
+.dummy {
+  block-size: 1000px;
+
+  &:nth-of-type(odd) {
+    background-color: lighten(#669900, 5%);
+  }
+
+  &:nth-of-type(even) {
+    background-color: darken(#669900, 5%);
+  }
+}
+
+.to-top {
+  inline-size: 48px;
+  block-size: 48px;
+  position: fixed;
+  inset-inline-end: 50px;
+  inset-block-end: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  transform: translateX(500);
+}
